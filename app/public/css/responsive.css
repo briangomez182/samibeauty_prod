@@ -205,6 +205,21 @@
     
 }
 @media (max-width: 767px){
+
+    .main_slider_area {
+        background: url(../img/team/people/people-3.jpg) no-repeat scroll top center;
+        background-size:cover;
+        height: 100vh;
+    }
+
+     #main_slider{
+          height: 90vh !important;
+     }
+
+    #main_slider ul{
+        margin-top: 250px !important;
+    }
+
     .shap_mobile {
         display: none;
     }
