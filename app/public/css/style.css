@@ -1,48 +1,25 @@
-/*----------------------------------------------------
-@File: Default Styles
-@Author: Rocky
-@URL: http://wethemez.com
-Author E-mail: rockybd1995@gmail.com
 
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: Cerative Agency
-@Author: Rocky
-@Developed By: Rocky
-@Developer URL: http://rocky.wethemez.com
-Author E-mail: rockybd1995@gmail.com
-
-@Default Styles
-
-Table of Content:
-01/ Variables
-02/ predefin
-03/ header
-04/ banner
-05/ slider
-06/ feature
-07/ button
-08/ service
-09/ testimonials 
-10/ blog 
-11/ contact 
-12/ footer 
-=====================================================================*/
-/*----------------------------------------------------*/
-/*font Variables*/
-/*Color Variables*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700");
 .col-md-offset-right-1, .col-lg-offset-right-1 {
   margin-right: 8.33333333%;
 }
 
+:root {
+  --color1: #bee3db;
+  --color2: #89b0ae;
+  --color3: #e7d7c9;
+  --color4: #be8f6e;
+}
 
-.single_img {
-  border: 3px solid white;
+
+.single_img img{
+  border: 3px solid #E7D7C9;
+  box-shadow: 15px 15px #BE8F6E;
+}
+
+.tp-mask-wrap{
+  height: 650px;
 }
 
 /*---------------------------------------------------- */
@@ -402,7 +379,7 @@ i:before {
 /* Slider css
 ============================================================================================ */
 .main_slider_area {
-  background: url(../img/home-slider/slider-bg-1.png) no-repeat scroll center center;
+  background: url(../img/home-slider/slider-bg-2.jpg) no-repeat scroll center center;
   background-size: cover;
 }
 
