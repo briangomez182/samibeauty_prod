@@ -252,10 +252,15 @@
     }
 }
 @media (max-width: 575px){
+
+    
+    .navbar-light .navbar-brand {
+        color: white;
+    }
+
     .team_img_inner .team_img_item img {
         max-width: 100%;
         height: 200px;
-
     }
     .bd-callout {
         position: relative;

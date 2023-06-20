@@ -379,13 +379,16 @@ i:before {
 /* Slider css
 ============================================================================================ */
 .main_slider_area {
-  background: url(../img/home-slider/slider-bg-2.jpg) no-repeat scroll center center;
+  background: url(../img/home-slider/slider-bg-3.jpg) no-repeat scroll center center;
   background-size: cover;
 }
 
 .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .first_text {
   font-weight: normal !important;
-  color: #0b1033;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.653);
+  border-left: 10px solid #fff;
+  padding: 10px;
 }
 
 .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .secand_text {
