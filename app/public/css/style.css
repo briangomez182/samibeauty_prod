@@ -6,16 +6,16 @@
 }
 
 :root {
-  --color1: #bee3db;
-  --color2: #89b0ae;
-  --color3: #e7d7c9;
-  --color4: #be8f6e;
+  --color1: #e7d7c9; 
+  --color2: #be8f6e;
+  --color3: #89b0ae; 
+  --color4: #c3c3c3;    
 }
 
 
 .single_img img{
-  border: 3px solid #E7D7C9;
-  box-shadow: 15px 15px #BE8F6E;
+  border: 3px solid var(--color1);
+  box-shadow: 15px 15px var(--color1);
 }
 
 .tp-mask-wrap{
@@ -169,13 +169,13 @@ i:before {
   top: 0px;
   width: 100%;
   z-index: 30;
-  padding: 0px 45px;
+  padding: 0px 0px;
 }
 
 .main_menu_area .navbar {
-  padding: 0px;
+  padding: 10px;
   border-radius: 0px;
-  background-color: transparent !important;
+  background-color: var(--color1) !important;
 }
 
 .main_menu_area .navbar .navbar-toggler {
@@ -221,7 +221,7 @@ i:before {
   color: #fff;
   letter-spacing: .65px;
   padding: 0px;
-  line-height: 118px;
+  line-height: 50px;
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
@@ -315,7 +315,7 @@ i:before {
 }
 
 .main_menu_area.navbar_fixed .navbar .navbar-nav li a {
-  line-height: 70px;
+  line-height: 50px;
 }
 
 /* End Main Menu Area css
@@ -331,8 +331,9 @@ i:before {
 }
 
 .banner_area:before {
+  /* banner- */
   content: "";
-  background: url(../img/banner/banner-bg.png) no-repeat scroll center right;
+  background: url(../img/home-slider/slider-bg-4.png) no-repeat scroll center right;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -379,15 +380,15 @@ i:before {
 /* Slider css
 ============================================================================================ */
 .main_slider_area {
-  background: url(../img/home-slider/slider-bg-3.jpg) no-repeat scroll center center;
+  background: url(../img/home-slider/slider-bg-4.png) no-repeat scroll center center;
   background-size: cover;
 }
 
 .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .first_text {
   font-weight: normal !important;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.653);
-  border-left: 10px solid #fff;
+  background-color: var(--color1);
+  border-left: 10px solid var(--color3);
   padding: 10px;
 }
 
@@ -420,7 +421,7 @@ i:before {
 
 .main_slider_area .rev_slider .tp-leftarrow, .main_slider_area .rev_slider .tp-rightarrow {
   height: 120px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#70bafe), color-stop(51%, #998dff), to(#70bafe));
+  background-image: -webkit-gradient(linear, left top, right top, from(#70bafe), color-stop(51%, var(--color4)), to(#70bafe));
   background-image: -webkit-linear-gradient(left, white 0%, white 51%, white 80%, white 100%);
   background-image: -o-linear-gradient(left, white 0%, white 51%, white 100%);
   background-image: linear-gradient(to right, transparent 0%, rgb(221, 221, 221) 51%, rgb(174, 174, 174) 100%);
@@ -595,7 +596,7 @@ i:before {
   transform: translateX(-50%);
   width: 70%;
   margin-top: 10px;
-  box-shadow: 10px 10px  #b5b5b54f;
+  box-shadow: 10px 10px  var(--color1);
 }
 
 .feature_item h4 {
@@ -663,10 +664,10 @@ i:before {
 
 .service_feature .feature_inner .feature_item:hover .more_btn {
   color: #fff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#70bafe), color-stop(51%, #998dff), to(#70bafe));
-  background-image: -webkit-linear-gradient(left, #70bafe 0%, #998dff 51%, #70bafe 100%);
-  background-image: -o-linear-gradient(left, #70bafe 0%, #998dff 51%, #70bafe 100%);
-  background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#70bafe), color-stop(51%, var(--color4)), to(#70bafe));
+  background-image: -webkit-linear-gradient(left, #70bafe 0%, var(--color4) 51%, #70bafe 100%);
+  background-image: -o-linear-gradient(left, #70bafe 0%, var(--color4) 51%, #70bafe 100%);
+  background-image: linear-gradient(to right, #70bafe 0%, var(--color4) 51%, #70bafe 100%);
   border-color: rgba(204, 241, 255, 0.5);
   background-clip: inherit;
 }
@@ -1277,10 +1278,10 @@ i:before {
 ============================================================================================ */
 .more_btn {
   padding: 0px 46px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#6fbcfe), color-stop(51%, #998dff), to(#6fbcfe));
-  background-image: -webkit-linear-gradient(left, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
-  background-image: -o-linear-gradient(left, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
-  background-image: linear-gradient(to right, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6fbcfe), color-stop(51%, var(--color4)), to(#6fbcfe));
+  background-image: -webkit-linear-gradient(left, #6fbcfe 0%, var(--color4) 51%, #6fbcfe 100%);
+  background-image: -o-linear-gradient(left, #6fbcfe 0%, var(--color4) 51%, #6fbcfe 100%);
+  background-image: linear-gradient(to right, #6fbcfe 0%, var(--color4) 51%, #6fbcfe 100%);
   background-size: 200% auto;
   z-index: 2;
   display: inline-block;
@@ -1302,10 +1303,10 @@ i:before {
 }
 
 .submit_btn {
-  background-image: -webkit-gradient(linear, left top, right top, from(#70bafe), color-stop(51%, #998dff), to(#70bafe));
-  background-image: -webkit-linear-gradient(left, #70bafe 0%, #998dff 51%, #70bafe 100%);
-  background-image: -o-linear-gradient(left, #70bafe 0%, #998dff 51%, #70bafe 100%);
-  background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#70bafe), color-stop(51%, var(--color4)), to(#70bafe));
+  background-image: -webkit-linear-gradient(left, #70bafe 0%, var(--color4) 51%, #70bafe 100%);
+  background-image: -o-linear-gradient(left, #70bafe 0%, var(--color4) 51%, #70bafe 100%);
+  background-image: linear-gradient(to right, #70bafe 0%, var(--color4) 51%, #70bafe 100%);
   background-size: 200% auto;
   z-index: 2;
   width: 176px;
