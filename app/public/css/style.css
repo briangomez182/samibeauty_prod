@@ -380,7 +380,7 @@ i:before {
 /* Slider css
 ============================================================================================ */
 .main_slider_area {
-  background: url(../img/home-slider/slider-bg-4.png) no-repeat scroll center center;
+  background: url(../img/banner.png) no-repeat scroll center center;
   background-size: cover;
 }
 
