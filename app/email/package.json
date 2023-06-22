@@ -1,0 +1,55 @@
+{
+    "_args": [
+      [
+        "auth-email@1.0.5",
+        "C:\\Users\\bgomez\\Documents\\proyectos\\samibeauty_prod\\app"
+      ]
+    ],
+    "_from": "auth-email@1.0.5",
+    "_id": "auth-email@1.0.5",
+    "_inBundle": false,
+    "_integrity": "sha512-mQCNjMjcldvidl75P7r8COh3R3hl4yl5E0Plqpx0lmCpqWSUE+yALQjBLfvaUNS/RcNAvohZN7Zl4QEYZPzIZw==",
+    "_location": "/auth-email",
+    "_phantomChildren": {},
+    "_requested": {
+      "type": "version",
+      "registry": true,
+      "raw": "auth-email@1.0.5",
+      "name": "auth-email",
+      "escapedName": "auth-email",
+      "rawSpec": "1.0.5",
+      "saveSpec": null,
+      "fetchSpec": "1.0.5"
+    },
+    "_requiredBy": [
+      "/"
+    ],
+    "_resolved": "https://registry.npmjs.org/auth-email/-/auth-email-1.0.5.tgz",
+    "_spec": "1.0.5",
+    "_where": "C:\\Users\\bgomez\\Documents\\proyectos\\samibeauty_prod\\app",
+    "author": {
+      "name": "Brian Gomez"
+    },
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "nodemailer": "^6.7.8"
+    },
+    "description": "Envía email con un código para usarlo en otra ruta o almacenarlo en una variable son los milisegundos desde el 1/01/1971",
+    "devDependencies": {},
+    "directories": {
+      "lib": "lib"
+    },
+    "keywords": [
+      "envíar código por email",
+      "nodemailer",
+      "Verificar usuario por email"
+    ],
+    "license": "ISC",
+    "main": "index.js",
+    "module": "node",
+    "name": "auth-email",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "version": "1.0.5"
+  }
