@@ -21,7 +21,7 @@ module.exports = {
             mensaje: req.body.message || "Sin Mensaje",
         }
             
-        /* sendEmail.enviarEmail(email, tokenGmail, usuarioMail, usuario) */
+         sendEmail.enviarEmail(email, tokenGmail, usuarioMail, usuario)
         return res.redirect('/mail-send') 
 
     },
