@@ -9,4 +9,6 @@ router.get('/contact', index.contact);
 
 router.post('/contact', index.contactPost);
 
+router.get('/mail-send', index.mailSend);
+
 module.exports = router;

@@ -11,21 +11,22 @@ module.exports = {
 
         let tokenGmail='guyjwvvobnbnwyuw'
         let email='samibeauty.no.reply@gmail.com'
-        let dataForm = req.body;
 
-        let usuarioMail = 'briangomezz182@gmail.com';
-        let phone = dataForm.phone;
-        /* validaciones del form */
-        /*  let validate = userHelper.validateFormRegister(req, res, dataForm) */
-       
-         if (true) {
-                sendEmail.enviarEmail(email, tokenGmail, usuarioMail, '1133691609')
+        let usuarioMail = 'briangomezz182@gmail.com'; /* mail de johansys */
+           
+        let usuario = {
+            apellido: req.body.name,
+            email: req.body.email,
+            telefono: req.body.phone,
+            mensaje: req.body.message || "Sin Mensaje",
+        }
+            
+        /* sendEmail.enviarEmail(email, tokenGmail, usuarioMail, usuario) */
+        return res.redirect('/mail-send') 
 
-        } 
- 
-         return res.redirect('/contact') 
-
-
+    },
+    mailSend: (req, res) => {
+        return res.render('form-submit')
     },
 }
 

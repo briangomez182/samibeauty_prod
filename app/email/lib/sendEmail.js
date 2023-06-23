@@ -6,7 +6,7 @@ const plantilla = require('./plantilla');
     let str =cod;
     return {s:bcryptjs.hashSync(str,10),str:str};
 }
- const enviar=async(sendEmail,token,receivEmail, phone)=>{
+ const enviar=async(sendEmail,token,receivEmail, usuario)=>{
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         // host: 'smtp.gmail.com',
@@ -23,7 +23,7 @@ const plantilla = require('./plantilla');
         cc: sendEmail,
         to: receivEmail,
         subject: '¡Nuevo Contacto en Sami Beauty!',
-        html: plantilla(receivEmail, phone)
+        html: plantilla(receivEmail, usuario)
      })
     // console.log(info)
   
