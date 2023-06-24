@@ -24,8 +24,11 @@ const plantilla = require('./plantilla');
         to: receivEmail,
         subject: '¡Nuevo Contacto en Sami Beauty!',
         html: plantilla(receivEmail, usuario)
-     })
-    // console.log(info)
+     }).then((result) => {
+      console.log(result);
+     }).catch((err) => {
+      console.log(err);
+     });
   
  } catch (error) { 
     console.log(error)
