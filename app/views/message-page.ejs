@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+    <body>
+        <%- include('./partials/header') %>
+        <!--================Slider Area =================-->
+        
+
+       
+        <section class="feature_area">
+            <div class="container">
+                <div class="c_title">
+                    <img src="img/icon/title-icon.png" alt="">
+                    <h6><%= message.title %></h6>
+                    <h2><%= message.subtitle %>.</h2>
+                </div>
+             
+            </div>
+        </section>
+
+
+        
+        <!--================Map Area =================-->
+        <%- include('./partials/contactMap') %>
+
+        <!--================End Map Area =================-->
+        <%- include('./partials/footer') %>
+    </body>
+</html>

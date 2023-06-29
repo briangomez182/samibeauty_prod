@@ -730,7 +730,7 @@ module.exports = function(receivEmail, usuario) {
                                                                                            color: black !important;">Nombre:</strong> ${usuario.apellido}
                                                                                            <br>
                                                                                            <strong style="
-                                                                                           color: black !important;">Teléfono:</strong> ${usuario.email}
+                                                                                           color: black !important;">Email:</strong> ${usuario.email}
                                                                                            <br>
                                                                                            <strong style="
                                                                                            color: black !important;">Teléfono:</strong> ${usuario.telefono}

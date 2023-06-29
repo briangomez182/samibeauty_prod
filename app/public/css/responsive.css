@@ -278,7 +278,10 @@
 }
 @media (max-width: 575px){
 
-    
+    .testi_item_about img{
+        height: 450px;
+    }
+
     .navbar-light .navbar-brand {
         color: white;
     }

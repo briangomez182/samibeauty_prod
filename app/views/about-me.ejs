@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <!--================Header Menu Area =================-->
+    <%- include('./partials/header') %>
+    <!--================End Header Menu Area =================-->
+
+    <!--================Banner Area =================-->
+    <section class="banner_area">
+      <div class="container">
+        <div class="banner_inner_text">
+          <h2>About Me</h2>
+          <p class="mt-4">A bit of me</p>
+        </div>
+      </div>
+    </section>
+    <!--================End Banner Area =================-->
+
+    <!--================Challange Area =================-->
+    <section class="challange_area p_100">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="challange_text_inner">
+              <div class="l_title">
+                <img src="/img/icon/title-icon.png" alt="" />
+                <h6>Eyelash & Brow Specialist</h6>
+                <h2>I am Johansys Sanchez</h2>
+              </div>
+              <p class="mt-4">
+                I am a passionate eyelash and brow specialist
+                with extensive experience in the field of beauty and personal
+                care. With a focus on enhancing the natural beauty of each
+                individual, my goal is to help my clients enhance their eyes and
+                achieve a radiant appearance. Florida State Certified
+                Esthetician.
+              </p>
+              <p class="mt-4">
+                Throughout my career, I have honed my skills and knowledge in
+                advanced eyelash extension techniques, brow styling, and related
+                beauty treatments. My approach is based on personalized
+                attention and understanding the unique needs and desires of each
+                client.
+              </p>
+              <p class="mt-4">
+                I work with dedication and precision to offer impeccable results
+                and meet the expectations of my clients. I strive to stay on top
+                of the latest trends and innovative techniques in the world of
+                beauty, which allows me to provide high-quality services and
+                ensure an exceptional experience. Founder of Sami beauty studio
+                in 2020.
+              </p>
+              <p class="mt-4">
+                In addition to my professional experience, I believe in
+                establishing a relationship of trust and comfort with my
+                clients. I love listening to your concerns and providing
+                personalized recommendations to achieve your desired results. My
+                goal is that each person who visits my studio feels pampered,
+                relaxed and confident that they are in the best hands.
+              </p>
+              <p class="mt-4">
+                If you are looking to enhance the beauty of your eyelashes and
+                eyebrows, you are in the right place. Feel free to contact me to
+                schedule an appointment or if you have any questions. I have
+                created a unique space for you, where you can highlight your
+                beauty even more and feel comfortable when visiting us and
+                living the Sami beauty experience. You will love it (Heart)
+              </p>
+
+              <div class="c_video">
+                <a class="popup-youtube" href="/"
+                  ><img src="/img/icon/title-icon.png" alt="" />Pictures of Me
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider -->
+          <div class="col-lg-6 challange_img">
+            <div class="challange_img_inner">
+              <img
+                class="img-fluid"
+                src="/img/team/people/people-2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Challange Area =================-->
+
+    <!--================Testimonials Slider Area =================-->
+    <section class="testimonials_area">
+      <div class="container">
+        <div class="testimonials_slider owl-carousel">
+          <% for( let index = 0; index < gallery.length; index++ ) { %>
+          <div class="item">
+            <div class="testi_item testi_item_about">
+              <h3>Titulo</h3>
+
+              <img
+                src="/img/team/people/<%= gallery[index] %>"
+                alt=""
+                width="100%"
+              />
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </section>
+    <!--================End Testimonials Slider Area =================-->
+
+    <!--================We Are Company Area =================-->
+    <section class="we_company_area p_100">
+      <div class="container">
+        <div class="row company_inner">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="left_company_text">
+              <div class="l_title">
+                <img src="/img/icon/title-icon.png" alt="" />
+                <h6>Discover the features</h6>
+                <h2>Service Statistics.</h2>
+              </div>
+              <div class="our_skill_inner">
+                <div class="single_skill">
+                  <h3>Statistics</h3>
+                  <div class="progress" data-value="70">
+                    <div class="progress-bar">
+                      <div class="progress_parcent">
+                        <span class="counter">70</span>%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single_skill">
+                  <h3>Statistics</h3>
+                  <div class="progress" data-value="90">
+                    <div class="progress-bar">
+                      <div class="progress_parcent">
+                        <span class="counter">90</span>%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single_skill">
+                  <h3>Statistics</h3>
+                  <div class="progress" data-value="85">
+                    <div class="progress-bar">
+                      <div class="progress_parcent">
+                        <span class="counter">85</span>%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single_skill">
+                  <h3>Statistics</h3>
+                  <div class="progress" data-value="90">
+                    <div class="progress-bar">
+                      <div class="progress_parcent">
+                        <span class="counter">90</span>%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single_skill">
+                  <h3>Statistics</h3>
+                  <div class="progress" data-value="75">
+                    <div class="progress-bar">
+                      <div class="progress_parcent">
+                        <span class="counter">75</span>%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End We Are Company Area =================-->
+
+    <!--================Footer Area =================-->
+    <%- include('./partials/footer') %>
+    <!--================End Footer Area =================-->
+  </body>
+</html>

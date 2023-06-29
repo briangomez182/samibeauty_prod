@@ -11,8 +11,8 @@
         <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_text">
-                    <h2>Nombre del servicio</h2>
-                    <p>Tipo de Servicio</p>
+                    <h2><%= service.nameService %></h2>
+                    <p><%= service.typeService %></p>
                 </div>
             </div>
         </section>
@@ -27,9 +27,9 @@
                             <div class="l_title">
                                 <img src="/img/icon/title-icon.png" alt="">
                                 <h6>Discover this Service</h6>
-                                <h2>Titulo del servicio</h2>
+                                <h2><%= service.nameService %></h2>
                             </div>
-                            <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum. Nam convallis vel erat id dictum. Sed ut risus in orci convallis viverra a eget nisi. Aenean pellentesque elit vitae eros dignissim ultrices. </p>
+                            <p><%= service.description %></p>
                             <div class="c_video">
                                 <a class="popup-youtube" href="/"><img src="/img/icon/title-icon.png" alt="">Service gallery </a>
                             </div>
@@ -39,7 +39,7 @@
                     <!-- Slider -->
                     <div class="col-lg-6 challange_img">
                         <div class="challange_img_inner">
-                            <img class="img-fluid" src="/img/team/people/people-2.jpg" alt="">
+                            <img class="img-fluid" src="<%= service.mainImg %>" alt="" width="100%">
                         </div>
                     </div>
                 </div>
@@ -51,12 +51,12 @@
         <section class="testimonials_area">
             <div class="container">
                 <div class="testimonials_slider owl-carousel">
-                    <% for( let index = 0; index < 4; index++ ) { %>
+                    <% for( let index = 0; index <service.gallery.length; index++ ) { %>
                         <div class="item">
                             <div class="testi_item">
-                                <h3>Titulo</h3>
+                                <h3>Titulo <%= service.gallery[index].id %></h3>
 
-                               <img src="/img/services/classic/classic (1).jpeg" alt="" width="100%">
+                               <img src="<%= service.gallery[index].path %>" alt="" width="100%">
                             </div>
                         </div>
                     <% } %>

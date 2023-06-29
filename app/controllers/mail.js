@@ -10,7 +10,8 @@ module.exports = {
         let tokenGmail='guyjwvvobnbnwyuw'
         let email='samibeauty.no.reply@gmail.com'
 
-        let usuarioMail = 'briangomezz182@gmail.com'; /* mail de johansys */
+        /* Mail donde se va a enviar el mensaje */
+        let usuarioMail = 'johansysancheza@gmail.com'; /* mail de johansys */
            
         let usuario = {
             apellido: req.body.name,

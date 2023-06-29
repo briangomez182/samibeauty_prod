@@ -503,7 +503,6 @@ i:before {
 .testimonials_slider .owl-item.center h3 {
   color: #fff;
   text-align: center;
-  margin-top: 10px;
 }
 
 .testimonials_slider .owl-item.center p {
@@ -512,6 +511,10 @@ i:before {
 
 .testimonials_slider .owl-item.center .media .media-body h5 {
   color: #fff;
+}
+
+.testi_item_about img{
+    height: 350px;
 }
 
 .owl-carousel .owl-item img {
