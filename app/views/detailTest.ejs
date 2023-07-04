@@ -8,33 +8,59 @@
         <!--================End Header Menu Area =================-->
         
         <!--================Banner Area =================-->
-        <section class="banner_area">
+   <!--      <section class="banner_area">
             <div class="container">
                 <div class="banner_inner_text">
                     <h2><%= service.nameService %></h2>
                     <p><%= service.typeService %></p>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================End Banner Area =================-->
         
         <!--================Challange Area =================-->
         <section class="challange_area p_100">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 ">
                         <div class="challange_text_inner">
                             <div class="l_title">
                                 <img src="/img/icon/title-icon.png" alt="">
-                                <h6>Discover this Service</h6>
+                                <h6>Discover this <%= service.typeService %></h6>
                                 <h2><%= service.nameService %></h2>
                             </div>
-                            <p><%= service.description %></p>
                             <div class="l_title">
-                                <img src="/img/icon/title-icon.png" alt="">
-                                <h2>Optional +</h2>
+                                <p><%= service.description %></p>
                             </div>
-                            <p><%= service.description %></p>
+
+                            <!-- Recomendaciones ----------------------------------------->
+                            
+                            
+                            <div class="l_title">
+                                <h2>Recomendations:</h2>
+                                <% if (service.recommendations.length > 0) { %>
+                                    <% service.recommendations.forEach(e => { %>
+                                        <p><%= e %></p>
+                                    <% }) %>
+                               <% } else { %>
+                                <p>No recomendations.</p>
+                                <% } %>
+                            </div>
+                            
+        
+                            <!-- Opcionales --------------------------------------- -->
+
+                            <div class="l_title">
+                                <h2>Optionals:</h2>
+                                <% if (service.optionals.length > 0) { %>
+                                    <% service.optionals.forEach(e => { %>
+                                        <p><%= e %></p>
+                                    <% }) %>
+                               <% } else { %>
+                                <p>No optionals.</p>
+                                <% } %>
+                            </div>
+                           
                             <div class="c_video">
                                 <a class="popup-youtube" href="/"><img src="/img/icon/title-icon.png" alt="">Service gallery </a>
                             </div>
@@ -42,7 +68,7 @@
                     </div>
 
                     <!-- Slider -->
-                    <div class="col-lg-6 challange_img">
+                    <div class="col-lg-4 challange_img">
                         <div class="challange_img_inner">
                             <img class="img-fluid" src="<%= service.mainImg %>" alt="" width="100%">
                         </div>
@@ -53,15 +79,21 @@
         <!--================End Challange Area =================-->
         
         <!--================Testimonials Slider Area =================-->
-        <section class="testimonials_area">
+        
+
+        <div class="c_title">
+            <h2><%= service.nameService %> service gallery</h2>
+        </div>
+       
+        <section class="gallery_area">
+
+
             <div class="container">
                 <div class="testimonials_slider owl-carousel">
                     <% for( let index = 0; index <service.gallery.length; index++ ) { %>
                         <div class="item">
                             <div class="testi_item">
-                                <h3>Titulo <%= service.gallery[index].id %></h3>
-
-                               <img src="<%= service.gallery[index].path %>" alt="" width="100%">
+                               <img class="gallery_item" src="<%= service.gallery[index].path %>" alt="<%= service.gallery[index].alternative %>">
                             </div>
                         </div>
                     <% } %>
@@ -69,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <!--================End Testimonials Slider Area =================-->
+
         
         <!--================We Are Company Area =================-->
         <section class="we_company_area p_100">
