@@ -759,6 +759,11 @@ i:before {
   transition: all 400ms linear 0s;
 }
 
+ #conten-curses-img{
+  width: 100%;
+  padding: 100px;
+}
+
 .team_people_text ul li a:before {
   content: "";
   height: 5px;
@@ -1193,11 +1198,14 @@ i:before {
   width: calc(50% - 160px);
   float: left;
   position: relative;
+  border-radius: 64% 36% 20% 80% / 62% 52% 48% 38% ;
+  background: var(--color4);  /* fallback for old browsers */
+  height: 600px;
+
 }
 
-.best_3d_area .left_3d:before {
+ .best_3d_area .left_3d:before {
   content: "";
-  background: url(../img/3d-slider-shap.png) no-repeat scroll center center;
   background-size: cover;
   min-height: 100%;
   position: absolute;
@@ -1206,7 +1214,7 @@ i:before {
   width: 797px;
   z-index: -1;
 }
-
+ 
 .best_3d_area .right_text {
   width: calc(50% + 160px);
   float: right;
