@@ -8,10 +8,10 @@ module.exports = {
             descriptionIndex: "Classic or well-known 1x1 technique with this technique you can achieve curvature and lengthening of your natural eyelashes and obtain a natural and delicate style as a result.",
             recommendations: ["Please go without makeup in the eye area."],
             optionals: [""],
-            mainImg: "/img/services/pestanas/pestanas-c (1).jpg",
+            mainImg: "/img/services/pestanas/pestanas-c1.jpg",
             gallery: [{
                 id: 1,
-                path: "/img/services/pestanas/pestanas-c (1).jpg",
+                path: "/img/services/pestanas/pestanas-c1.jpg",
                 alternative: "Classic"
             },
             {
