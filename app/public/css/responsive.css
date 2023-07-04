@@ -215,6 +215,14 @@
 }
 @media (max-width: 767px){
 
+    #conten-curses-img {
+        padding: 20px;
+    }
+
+    .footer_widget_inner .offset-lg-4{
+        padding: 0;
+    }
+
     .main_slider_area {
         background: url(../img/team/people/people-6-XL.JPG) no-repeat scroll top center;
         background-size:cover;

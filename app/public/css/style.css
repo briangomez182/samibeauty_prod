@@ -107,6 +107,41 @@ i:before {
   font-weight: bolder;
   font-size: 30px;
 }
+
+
+
+.whatsapp-icon-x3{
+  position: relative;
+  background-image: url(../img/whatsapp.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  background-size: 38px 38px;
+  top: 10px;
+  vertical-align: middle;
+  left: 2px;
+ 
+}
+
+.float-bottom-right {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: 25px;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  background-color: var(--color3)
+}
+.float-floating {
+  z-index: 9999999;
+  color: #FFF!important;
+}
+
+
 /* Main title css
 ============================================================================================ */
 .c_title {
@@ -635,7 +670,7 @@ i:before {
 
 .feature_item .f_icon img {
  
-  width: 300px;
+  width: 80%;
   height: 300px;
   object-fit: cover;
   box-shadow: 10px 10px  var(--color1);
@@ -658,8 +693,8 @@ i:before {
   max-width: 290px;
   margin: auto;
   margin-bottom: 20px;
-  padding-bottom: 60px;
-  height: 300px;
+  padding: 5%;
+  height: 250px;
 
 }
 
@@ -2344,6 +2379,18 @@ i:before {
   margin-bottom: 0px;
 }
 
+.f_insta_widget{
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) -4px -2px 18px;
+  padding: 15px;
+}
+
+.f_insta_widget .f_title h3{
+  text-align: center;
+}
+
+
 /* End Blog Main Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -2351,8 +2398,9 @@ i:before {
 /* Footer Area css
 ============================================================================================ */
 .footer_widget_area {
-  background: url(../img/footer-bg.jpg) no-repeat scroll center center;
-  background-size: cover;
+  background-image: url('../img/banner.png');
+  background-size:cover;
+  background-repeat: no-repeat;
   padding: 130px 0px 115px 0px;
 }
 
@@ -2400,7 +2448,8 @@ i:before {
 
 .f_insta_widget ul li a img {
   width: 90px;
-  height: 80px;
+  height: 90px;
+  margin-bottom: 5px;
 }
 
 .f_subs_widget .input-group {
@@ -2465,7 +2514,7 @@ i:before {
 
 .footer_copyright {
   overflow: hidden;
-  background: #11173b;
+  background: var(--color1);
   padding: 35px 0px;
 }
 
