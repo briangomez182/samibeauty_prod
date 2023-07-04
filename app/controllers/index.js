@@ -8,7 +8,7 @@ module.exports = {
         return res.render('index',{servicesExtensions, servicesEyebrows})
     },
     about: (req, res) => {
-        let gallery = ['people-2.jpg', 'people-6-X.JPG', 'banner.JPG']
+        let gallery = ['people-2.jpg', 'people-6-XL.JPG', 'banner.JPG']
         return res.render('about-me', {gallery})
     }
 }
