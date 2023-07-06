@@ -224,7 +224,7 @@
     }
 
     .main_slider_area {
-        background: url(../img/team/people/people-6-XL.JPG) no-repeat scroll top center;
+        background: url(../img/team/people/a.png) no-repeat scroll top center;
         background-size:cover;
         height: 95vh;
         margin-top: 5vh;
@@ -286,6 +286,9 @@
 }
 @media (max-width: 575px){
 
+    .navbar-brand img{
+        width: 200px;
+    }
     .testi_item_about img{
         height: 450px;
     }
@@ -433,6 +436,9 @@
     .more_btn {
         width: 100%;
         padding: 0;
+        
+    line-height: 30px;
+
     }
 
     .feature_inner .col-6{

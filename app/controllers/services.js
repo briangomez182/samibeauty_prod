@@ -7,7 +7,7 @@ module.exports = {
 
         if (service.length > 0) {
             /* Trae algo */
-            return res.render('detailTest', {service: service[0]});
+            return res.render('detailService', {service: service[0]});
 
         } else {
             /* No trae nada */
