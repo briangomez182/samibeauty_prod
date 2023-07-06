@@ -31,11 +31,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: 'myApp',
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: true,
+  cookie: {httpOnly: false, secure: true}
 }));
 
 /* #nota: Crear middleware de cookies AQUI */
-app.use(function(req, res, next) {
+/* app.use(function(req, res, next) {
 if (req.cookies.langES == 'ES') {
     req.session.langES = true;
     return next();
@@ -44,8 +45,7 @@ if (req.cookies.langES == 'ES') {
   return next();
 }
 
-
-});
+}); */
 
 
 app.use('/', indexRouter);
