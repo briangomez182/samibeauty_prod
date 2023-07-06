@@ -8,7 +8,7 @@ module.exports = {
             description: "Técnica clásica o conocida 1x1 con esta técnica puedes lograr curvatura y alargamiento en tus pestañas naturales y obtener como resultado un estilo natural y delicado.",
             descriptionIndex: "Técnica clásica o conocida 1x1 con esta técnica puedes lograr curvatura y alargamiento en tus pestañas naturales y obtener como resultado un estilo natural y delicado.",
             recommendations: ["Por favor acudir sin maquillaje en la zona de los ojos."],
-            optionals: [""],
+            optionals: [],
             mainImg: "/img/services/pestanas/pestanas-c1.jpg",
             gallery: [{
                 id: 1,
@@ -29,98 +29,98 @@ module.exports = {
         },
         {
             id: 2,
-            nameService: "Hybrid",
+            nameService: "Hibridas",
             numService : 1,
-            typeService: "Extensions Service",
-            description: "It consists of the mixture of two techniques, the 1x1 technique added to a 2D technique in order to obtain results that continue to look natural, but that give a lot of style and a little more depth to your eyes.",
-            descriptionIndex: "It consists of the mixture of two techniques, the 1x1 technique added to a 2D technique in order to obtain results that continue to look natural, but that give a lot of style and a little more depth to your eyes.",
+            typeService: "Servicios de Extensionsiones",
+            description: "Consiste en la mezcla de dos técnicas, la técnica 1x 1 sumado a una técnica de 2D para así obtener resultados que sigan luciendo naturales, pero que le den mucho estilo y un poco más de profundidad a tu mirada ",
+            descriptionIndex: "Consiste en la mezcla de dos técnicas, la técnica 1x 1 sumado a una técnica de 2D para así obtener resultados que sigan luciendo naturales, pero que le den mucho estilo y un poco más de profundidad a tu mirada ",
             recommendations: [],
             optionals: [],
             mainImg: "/img/services/pestanas/pestanas-h (1).jpeg",
             gallery: [{
                 id: 1,
                 path: "/img/services/pestanas/pestanas-h (1).jpeg",
-                alternative: "Hybrid"
+                alternative: "Hibridas"
             },
             {
                 id: 2,
                 path: "/img/services/pestanas/pestanas-h (2).jpg",
-                alternative: "Hybrid"
+                alternative: "Hibridas"
             },
             {
                 id: 3,
                 path: "/img/services/pestanas/pestanas-h (3).jpg",
-                alternative: "Hybrid"
+                alternative: "Hibridas"
             }
         ]
         },
         {
             id: 3,
-            nameService: "Deluxe",
+            nameService: "De lujo",
             numService : 2,
-            typeService: "Eyebrows Service",
-            description: "Service in which we design your eyebrows according to the natural structure of your face, with soft wax hair removal, includes drainage and cold therapy.",
-            descriptionIndex: "Service in which we design your eyebrows according to the natural structure of your face, with soft wax hair removal, includes drainage and cold therapy.",
+            typeService: "Servicio de Cejas",
+            description: "Servicio en el que diseñamos tu cejas de acuerdo a la estructura natural de tu rostro, con depilación con cera suave, incluye masaje de drenaje y terapia de frío",
+            descriptionIndex: "Servicio en el que diseñamos tu cejas de acuerdo a la estructura natural de tu rostro, con depilación con cera suave, incluye masaje de drenaje y terapia de frío",
             mainImg: "/img/services/cejas/cejas-d (2).jpeg",
             recommendations: [],
-            optionals: ['Make-up'],
+            optionals: ['Maquillaje'],
             gallery: [{
                 id: 1,
                 path: "/img/services/cejas/cejas-d (1).jpg",
-                alternative: "Deluxe"
+                alternative: "De Lujo"
             },
             {
                 id: 1,
                 path: "/img/services/cejas/cejas-d (2).jpeg",
-                alternative: "Deluxe"
+                alternative: "De Lujo"
             },
             {
                 id: 1,
                 path: "/img/services/cejas/cejas-d (3).jpeg",
-                alternative: "Deluxe"
+                alternative: "De Lujo"
             }]
         }
         ,
         {
             id: 4,
-            nameService: "Hybrid Brows",
+            nameService: "Cejas Hibridas",
             numService : 2,
-            typeService: "Eyebrows Service",
-            description: "Hybrid tinting and waxing eyebrow design.",
-            descriptionIndex: "Hybrid tinting and waxing eyebrow design.",
+            typeService: "Servicio de Cejas",
+            description: "Diseño de cejas con depilación con cera y tinte híbrido ",
+            descriptionIndex: "Diseño de cejas con depilación con cera y tinte híbrido ",
             mainImg: "/img/services/cejas/cejas-h (1).jpg",
-            recommendations: ['With a duration of 7 to 10 days on the skin and 4 weeks on the hair'],
+            recommendations: ['Duración : De 7 a 10 días en la piel y 4 semanas en el vello '],
             optionals: [],
             gallery: [{
                 id: 40,
                 path: "/img/services/cejas/cejas-h (1).jpg",
-                alternative: "Hybrid"
+                alternative: ""
             },
             {
                 id: 40,
                 path: "/img/services/cejas/cejas-h (2).jpg",
-                alternative: "Hybrid"
+                alternative: "Hibridas"
             }]
         },
         {
             id: 5,
-            nameService: "Brow Lamination Deluxe",
+            nameService: "Laminación de cejas de Lujo:",
             numService : 2,
-            typeService: "Eyebrows Service",
-            description: "Procedure that makes them look more populated and orderly lasts about 2 months. Lamination of the eyebrows consists of performing an eyebrow ironing, it is not exclusively for those who have excessively populated or rebellious eyebrows, it is for all those people who want to show off a more sophisticated image. When ironing the eyebrows, they will be combed in one direction and will look perfect, since this helps to correctly define their shape.",
-            descriptionIndex: "Procedure that makes them look more populated and orderly lasts about 2 months. Lamination of the eyebrows consists of performing an eyebrow ironing, it is not exclusively for those who have excessively populated or rebellious eyebrows, it is for all those people who want to show off a more sophisticated image...",
+            typeService: "Servicio de Cejas",
+            description: "Procedimiento que hace que se vean más pobladas y ordenadas dura alrededor de 2 meses. La laminación  de cejas consiste en realizar un planchado de cejas no es exclusivamente para quien tiene cejas demasiado pobladas o rebeldes, es para todas aquellas personas que quieren lucir una imagen más sofisticada. Al hacer el planchado de cejas, estas quedarán peinadas hacia una sola dirección y lucirán perfectas, puesto que esto ayuda a definir correctamente su forma.",
+            descriptionIndex: "rocedimiento que hace que se vean más pobladas y ordenadas dura alrededor de 2 meses. La laminación  de cejas consiste en realizar un planchado de cejas no es exclusivamente para quien tiene cejas demasiado pobladas o rebeldes, es para todas aquellas personas que quieren lucir una imagen más sofisticada.",
             mainImg: "/img/services/cejas/cejas-lumi.jpeg",
-            recommendations: ['Includes styling and waxing'],
+            recommendations: ['Incluye diseño y depilación '],
             optionals: [],
             gallery: [{
                 id: 30,
                 path: "/img/services/cejas/cejas-lumi.jpeg",
-                alternative: "Lamination Deluxe"
+                alternative: "Laminación de cejas de Lujo"
             },
             {
                 id: 30,
                 path: "/img/services/cejas/cejas-lumi.jpeg",
-                alternative: "Lamination Deluxe"
+                alternative: "Laminación de cejas de Lujo"
             }]
         }
         

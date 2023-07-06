@@ -642,6 +642,10 @@ i:before {
 }
 
 .testi_item{
+  height: 200px;
+}
+
+.testi_item_about{
   height: 400px;
 }
 
@@ -1008,25 +1012,27 @@ i:before {
   margin-bottom: 20px;
 }
 
+
 .our_skill_inner .single_skill h3 {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
-  color: #7c8d93;
+  color: black;
   font-weight: 500;
   padding-bottom: 12px;
+  text-align: right;
 }
 
 .our_skill_inner .single_skill .progress {
   height: 5px;
-  background: #f4f8fc;
+  background: #f0eeee;
   border-radius: 0px;
   overflow: visible;
 }
 
 .our_skill_inner .single_skill .progress .progress-bar {
-  background-image: -moz-linear-gradient(0deg, #6ebdfe 0%, #9b8aff 100%);
-  background-image: -webkit-linear-gradient(0deg, #6ebdfe 0%, #9b8aff 100%);
-  background-image: -ms-linear-gradient(0deg, #6ebdfe 0%, #9b8aff 100%);
+  background-image: -moz-linear-gradient(0deg, #e7d7c9 0%, #be8f6e 100%);
+  background-image: -webkit-linear-gradient(0deg, #e7d7c9 0%, #be8f6e 100%);
+  background-image: -ms-linear-gradient(0deg, #e7d7c9 0%, #be8f6e 100%);
   position: relative;
 }
 
@@ -1034,9 +1040,9 @@ i:before {
   position: absolute;
   right: 0px;
   top: -40px;
-  background-image: -moz-linear-gradient(10deg, #6ebdfe 0%, #9b8aff 100%);
-  background-image: -webkit-linear-gradient(10deg, #6ebdfe 0%, #9b8aff 100%);
-  background-image: -ms-linear-gradient(10deg, #6ebdfe 0%, #9b8aff 100%);
+  background-image: -moz-linear-gradient(10deg, #be8f6e 0%, #e7d7c9 100%);
+  background-image: -webkit-linear-gradient(10deg, #be8f6e 0%, #e7d7c9 100%);
+  background-image: -ms-linear-gradient(10deg, #be8f6e 0%, #e7d7c9 100%);
   color: #fff;
   padding: 0px 16px;
   font-size: 14px;

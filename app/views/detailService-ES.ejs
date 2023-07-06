@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     
-<%- include('./partials/head-ES') %>
+<%- include('./partials/head') %>
 <body>
      <!--================Header Menu Area =================-->
     <%- include('./partials/header-ES') %>
@@ -16,7 +16,7 @@
                         <div class="challange_text_inner">
                             <div class="l_title">
                                 <img src="/img/icon/title-icon.png" alt="">
-                                <h6>Discover this <%= service.typeService %></h6>
+                                <h6>Descubre los <%= service.typeService %></h6>
                                 <h2><%= service.nameService %></h2>
                             </div>
                             <div class="l_title">
@@ -27,13 +27,13 @@
                             
                             
                             <div class="l_title">
-                                <h2>Recomendations:</h2>
+                                <h2>Recomendaciones:</h2>
                                 <% if (service.recommendations.length > 0) { %>
                                     <% service.recommendations.forEach(e => { %>
                                         <p><%= e %></p>
                                     <% }) %>
                                <% } else { %>
-                                <p>No recomendations.</p>
+                                <p>Sin recomendations.</p>
                                 <% } %>
                             </div>
                             
@@ -41,18 +41,18 @@
                             <!-- Opcionales --------------------------------------- -->
 
                             <div class="l_title">
-                                <h2>Optionals:</h2>
+                                <h2>Opcionales:</h2>
                                 <% if (service.optionals.length > 0) { %>
                                     <% service.optionals.forEach(e => { %>
                                         <p><%= e %></p>
                                     <% }) %>
                                <% } else { %>
-                                <p>No optionals.</p>
+                                <p>Sin opcionales.</p>
                                 <% } %>
                             </div>
                            
                             <div class="c_video">
-                                <a class="popup-youtube" href="/"><img src="/img/icon/title-icon.png" alt="">Service gallery </a>
+                                <a class="popup-youtube" href="/"><img src="/img/icon/title-icon.png" alt="">Galeria del rvicio</a>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
         
 
         <div class="c_title">
-            <h2><%= service.nameService %> service gallery</h2>
+            <h2>Galeria del Servicio de <%= service.nameService %> </h2>
         </div>
        
         <section class="gallery_area">
@@ -93,66 +93,7 @@
         </section>
 
         
-        <!--================We Are Company Area =================-->
-        <section class="we_company_area p_100">
-            <div class="container">
-                <div class="row company_inner">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="left_company_text">
-                            <div class="l_title">
-                                <img src="/img/icon/title-icon.png" alt="">
-                                <h6>Discover the features</h6>
-                                <h2>Service Statistics.</h2>
-                            </div>
-                            <div class="our_skill_inner">
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="70">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">70</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="90">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">90</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="85">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">85</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="90">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">90</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="75">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">75</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                </div>
-            </div>
-        </section>
-        <!--================End We Are Company Area =================-->
+        <%- include('./partials/serviceStatistics-ES') %>
         
         <!--================Footer Area =================-->
         <%- include('./partials/footer-ES') %>

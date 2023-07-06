@@ -86,8 +86,6 @@
         </div>
        
         <section class="gallery_area">
-
-
             <div class="container">
                 <div class="testimonials_slider owl-carousel">
                     <% for( let index = 0; index <service.gallery.length; index++ ) { %>
@@ -102,67 +100,8 @@
             </div>
         </section>
 
-        
-        <!--================We Are Company Area =================-->
-        <section class="we_company_area p_100">
-            <div class="container">
-                <div class="row company_inner">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="left_company_text">
-                            <div class="l_title">
-                                <img src="/img/icon/title-icon.png" alt="">
-                                <h6>Discover the features</h6>
-                                <h2>Service Statistics.</h2>
-                            </div>
-                            <div class="our_skill_inner">
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="70">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">70</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="90">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">90</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="85">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">85</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="90">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">90</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single_skill">
-                                    <h3>Statistics</h3>
-                                    <div class="progress" data-value="75">
-                                        <div class="progress-bar">
-                                            <div class="progress_parcent"><span class="counter">75</span>%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  
-                </div>
-            </div>
-        </section>
-        <!--================End We Are Company Area =================-->
+        <%- include('./partials/serviceStatistics') %>
+       
         
         <!--================Footer Area =================-->
         <%- include('./partials/footer') %>

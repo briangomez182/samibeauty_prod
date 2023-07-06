@@ -41,7 +41,8 @@ module.exports = {
             /* Esta em español */
             req.session.langES = undefined;
         }
-        return res.redirect('/');
+        let path = req.query.path;
+        return res.redirect(path);
     }
 }
 
