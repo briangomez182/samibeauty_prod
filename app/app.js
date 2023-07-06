@@ -34,7 +34,7 @@ app.use(
     resave: false, // we support the touch method so per the express-session docs this should be set to false
     proxy: true, // if you do SSL outside of node.
     saveUninitialized: true,
-    cookie: { secure: true, sameSite: "none" },
+    cookie: { httpOnly: true, secure: true, maxAge: 1000 * 60 * 60 * 48, sameSite: 'none' }
   })
 );
 
