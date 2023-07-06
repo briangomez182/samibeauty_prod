@@ -2,12 +2,12 @@ module.exports = {
     listServices:[
         {
             id: 1,
-            nameService: "Classic",
-            numService : 1, /*  */
-            typeService: "Extensions Service",
-            description: "Classic or well-known 1x1 technique with this technique you can achieve curvature and lengthening of your natural eyelashes and obtain a natural and delicate style as a result.",
-            descriptionIndex: "Classic or well-known 1x1 technique with this technique you can achieve curvature and lengthening of your natural eyelashes and obtain a natural and delicate style as a result.",
-            recommendations: ["Please go without makeup in the eye area."],
+            nameService: "Clasicas",
+            numService : 1,
+            typeService: "Servicios de Extensiones",
+            description: "Técnica clásica o conocida 1x1 con esta técnica puedes lograr curvatura y alargamiento en tus pestañas naturales y obtener como resultado un estilo natural y delicado.",
+            descriptionIndex: "Técnica clásica o conocida 1x1 con esta técnica puedes lograr curvatura y alargamiento en tus pestañas naturales y obtener como resultado un estilo natural y delicado.",
+            recommendations: ["Por favor acudir sin maquillaje en la zona de los ojos."],
             optionals: [""],
             mainImg: "/img/services/pestanas/pestanas-c1.jpg",
             gallery: [{
@@ -30,7 +30,7 @@ module.exports = {
         {
             id: 2,
             nameService: "Hybrid",
-            numService : 1, 
+            numService : 1,
             typeService: "Extensions Service",
             description: "It consists of the mixture of two techniques, the 1x1 technique added to a 2D technique in order to obtain results that continue to look natural, but that give a lot of style and a little more depth to your eyes.",
             descriptionIndex: "It consists of the mixture of two techniques, the 1x1 technique added to a 2D technique in order to obtain results that continue to look natural, but that give a lot of style and a little more depth to your eyes.",

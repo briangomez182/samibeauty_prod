@@ -1,10 +1,13 @@
 const sendEmail = require('../email/index');
-const data = require('../data/data');
 
 module.exports = {
     home: (req, res) => {
-        let servicesExtensions = data.listServices.filter(data => data.typeService == 'Extensions Service');
-        let servicesEyebrows = data.listServices.filter(data => data.typeService == 'Eyebrows Service');
+
+
+        const data = req.session.langES == undefined ? require('../data/data') : require('../data/data-ES') ;
+
+        let servicesExtensions  = data.listServices.filter(data => data.numService == 1);
+        let servicesEyebrows    = data.listServices.filter(data => data.numService == 2);
 
         if (req.session.langES == undefined) {
             /* Esta en ingles */
