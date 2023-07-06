@@ -4,6 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+/* #nota: Importar session  */
+const session = require('express-session');
+
 /* test */
 
 var indexRouter = require('./routes/index');
@@ -22,6 +25,21 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+/* #nota: Crear middleware de session */
+app.use(session({
+  secret: 'myApp',
+  resave: false,
+  saveUninitialized: true
+}));
+
+/* #nota: Crear middleware de locals */
+app.use(function(req, res, next) {
+  if (req.session.user != undefined) {
+      res.locals.user = req.session.user;
+  }
+  return next();
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

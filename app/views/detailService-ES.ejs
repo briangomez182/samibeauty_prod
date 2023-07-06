@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<%- include('./partials/head-ES') %>
+<body>
+     <!--================Header Menu Area =================-->
+    <%- include('./partials/header-ES') %>
+        <!--================End Header Menu Area =================-->
+        
+
+        <!--================Challange Area =================-->
+        <section class="challange_area p_100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 ">
+                        <div class="challange_text_inner">
+                            <div class="l_title">
+                                <img src="/img/icon/title-icon.png" alt="">
+                                <h6>Discover this <%= service.typeService %></h6>
+                                <h2><%= service.nameService %></h2>
+                            </div>
+                            <div class="l_title">
+                                <p><%= service.description %></p>
+                            </div>
+
+                            <!-- Recomendaciones ----------------------------------------->
+                            
+                            
+                            <div class="l_title">
+                                <h2>Recomendations:</h2>
+                                <% if (service.recommendations.length > 0) { %>
+                                    <% service.recommendations.forEach(e => { %>
+                                        <p><%= e %></p>
+                                    <% }) %>
+                               <% } else { %>
+                                <p>No recomendations.</p>
+                                <% } %>
+                            </div>
+                            
+        
+                            <!-- Opcionales --------------------------------------- -->
+
+                            <div class="l_title">
+                                <h2>Optionals:</h2>
+                                <% if (service.optionals.length > 0) { %>
+                                    <% service.optionals.forEach(e => { %>
+                                        <p><%= e %></p>
+                                    <% }) %>
+                               <% } else { %>
+                                <p>No optionals.</p>
+                                <% } %>
+                            </div>
+                           
+                            <div class="c_video">
+                                <a class="popup-youtube" href="/"><img src="/img/icon/title-icon.png" alt="">Service gallery </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider -->
+                    <div class="col-lg-4 challange_img">
+                        <div class="challange_img_inner">
+                            <img class="img-fluid" src="<%= service.mainImg %>" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Challange Area =================-->
+        
+        <!--================Testimonials Slider Area =================-->
+        
+
+        <div class="c_title">
+            <h2><%= service.nameService %> service gallery</h2>
+        </div>
+       
+        <section class="gallery_area">
+
+
+            <div class="container">
+                <div class="testimonials_slider owl-carousel">
+                    <% for( let index = 0; index <service.gallery.length; index++ ) { %>
+                        <div class="item">
+                            <div class="testi_item">
+                               <img class="gallery_item" src="<%= service.gallery[index].path %>" alt="<%= service.gallery[index].alternative %>">
+                            </div>
+                        </div>
+                    <% } %>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <!--================We Are Company Area =================-->
+        <section class="we_company_area p_100">
+            <div class="container">
+                <div class="row company_inner">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="left_company_text">
+                            <div class="l_title">
+                                <img src="/img/icon/title-icon.png" alt="">
+                                <h6>Discover the features</h6>
+                                <h2>Service Statistics.</h2>
+                            </div>
+                            <div class="our_skill_inner">
+                                <div class="single_skill">
+                                    <h3>Statistics</h3>
+                                    <div class="progress" data-value="70">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">70</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_skill">
+                                    <h3>Statistics</h3>
+                                    <div class="progress" data-value="90">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">90</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_skill">
+                                    <h3>Statistics</h3>
+                                    <div class="progress" data-value="85">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">85</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_skill">
+                                    <h3>Statistics</h3>
+                                    <div class="progress" data-value="90">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">90</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_skill">
+                                    <h3>Statistics</h3>
+                                    <div class="progress" data-value="75">
+                                        <div class="progress-bar">
+                                            <div class="progress_parcent"><span class="counter">75</span>%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+        <!--================End We Are Company Area =================-->
+        
+        <!--================Footer Area =================-->
+        <%- include('./partials/footer-ES') %>
+        <!--================End Footer Area =================-->
+    </body>
+</html>

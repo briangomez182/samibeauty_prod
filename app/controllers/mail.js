@@ -3,7 +3,15 @@ const sendEmail = require('../email/index');
 module.exports = {
    
     contact: (req, res) => {
-        return res.render('contact')
+
+        if (req.session.langES == undefined) {
+            /* Esta en ingles */
+            return res.render('contact')
+        } else {
+            /* Esta en español */
+            return res.render('contact-ES')
+        }
+      
     },
     contactPost : (req, res) => {
 
@@ -22,8 +30,18 @@ module.exports = {
             
         sendEmail.enviarEmail(email, tokenGmail, usuarioMail, usuario, res)
     },
-    mailSend: (req, res) => {
-        return res.render('form-submit')
+    mailSend: (req, res) => {  
+        
+        if (req.session.langES == undefined) {
+            /* Esta en ingles */
+            return res.render('form-submit')
+
+        } else {
+            /* Esta en español */
+            return res.render('form-submit-ES')
+
+        }
+
     }
 }
 
