@@ -26,25 +26,27 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.set("trust proxy", 1); // trust first proxy
 
-app.use(
-  session({
-    secret: "myApp",
-    resave: false, // we support the touch method so per the express-session docs this should be set to false
-    proxy: true, // if you do SSL outside of node.
-    saveUninitialized: true,
-    cookie: { httpOnly: true, secure: true, maxAge: 1000 * 60 * 60 * 48, sameSite: 'none' }
-  })
-);
+/* #nota: Crear middleware de session AQUI */
+app.use(session({
+  secret: 'myApp',
+  resave: false,
+  saveUninitialized: true
+}));
 
-/* #nota: Crear middleware de locals */
+/* #nota: Crear middleware de cookies AQUI */
 app.use(function(req, res, next) {
-  if (req.session.user != undefined) {
-      res.locals.user = req.session.user;
-  }
+if (req.cookies.langES == 'ES') {
+    req.session.langES = true;
+    return next();
+    
+} else {
   return next();
+}
+
+
 });
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
