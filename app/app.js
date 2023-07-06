@@ -26,19 +26,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* #nota: Crear middleware de session */
-app.use(session({
-  secret: 'myApp',
-  resave: false,
-  saveUninitialized: true,
-  proxy: true, // Required for Heroku & Digital Ocean (regarding X-Forwarded-For)
-  name: 'MyCoolWebAppCookieName', // This needs to be unique per-host.
-  cookie: {
-    secure: true, // required for cookies to work on HTTPS
-    httpOnly: false,
-    sameSite: 'none'
-  }
-}));
+app.set("trust proxy", 1); // trust first proxy
+
+app.use(
+  session({
+    secret: "myApp",
+    resave: false, // we support the touch method so per the express-session docs this should be set to false
+    proxy: true, // if you do SSL outside of node.
+    saveUninitialized: true,
+    cookie: { secure: true, sameSite: "none" },
+  })
+);
 
 /* #nota: Crear middleware de locals */
 app.use(function(req, res, next) {
