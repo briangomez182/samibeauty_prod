@@ -32,8 +32,7 @@ app.enable('trust proxy')
 app.use(session({
   secret: 'myApp',
   resave: false,
-  saveUninitialized: true,
-  cookie: { httpOnly: true, secure: true, maxAge: 1000 * 60 * 60 * 48, sameSite: 'none' }
+  saveUninitialized: true
 }));
 
 /* #nota: Crear middleware de locals AQUI */
