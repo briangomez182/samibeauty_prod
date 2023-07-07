@@ -32,8 +32,17 @@ app.use(session({
   secret: 'myApp',
   resave: false,
   saveUninitialized: true,
-  cookie: {httpOnly: false, secure: true}
 }));
+
+/* #nota: Crear middleware de locals AQUI */
+app.use(function(req, res, next) {
+  /* Logica */
+
+  if (req.session.langES != undefined) {
+      res.locals.langES = req.session.langES;
+  }
+  return next();
+});
 
 /* #nota: Crear middleware de cookies AQUI */
 /* app.use(function(req, res, next) {
