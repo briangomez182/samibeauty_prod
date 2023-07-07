@@ -3,8 +3,6 @@ const sendEmail = require('../email/index');
 module.exports = {
     home: (req, res) => {
 
-        req.session.langES = undefined;
-
         const data = req.session.langES == undefined ? require('../data/data') : require('../data/data-ES') ;
 
         let servicesExtensions  = data.listServices.filter(data => data.numService == 1);
