@@ -35,18 +35,10 @@ app.use(session({
   saveUninitialized: true
 }));
 
-/* #nota: Crear middleware de locals AQUI */
-app.use(function(req, res, next) {
-  /* Logica */
 
-  if (req.session.langES != undefined) {
-      res.locals.langES = req.session.langES;
-  }
-  return next();
-});
 
 /* #nota: Crear middleware de cookies AQUI */
-/* app.use(function(req, res, next) {
+app.use(function(req, res, next) {
 if (req.cookies.langES == 'ES') {
     req.session.langES = true;
     return next();
@@ -55,7 +47,7 @@ if (req.cookies.langES == 'ES') {
   return next();
 }
 
-}); */
+});
 
 
 app.use('/', indexRouter);

@@ -32,7 +32,7 @@ module.exports = {
     },
     lang: (req, res) => {
 
-       /*  res.cookie('langES', 'ES', {maxAge: 1000 * 60 * 20}) */
+        res.cookie('langES', 'ES', {maxAge: 1000 * 60 * 20})
 
         if (req.session.langES == undefined) {
             /* Esta en ingles */
