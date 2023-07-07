@@ -26,12 +26,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.enable('trust proxy')
 
 /* #nota: Crear middleware de session AQUI */
 app.use(session({
   secret: 'myApp',
   resave: false,
-  saveUninitialized: true,
+  saveUninitialized: true
 }));
 
 /* #nota: Crear middleware de locals AQUI */
