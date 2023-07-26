@@ -233,6 +233,14 @@ i:before {
   padding-bottom: 25px;
 }
 
+.l_title_service {
+  padding-bottom: 25px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 .l_title img {
   padding-bottom: 30px;
 }
@@ -1460,7 +1468,27 @@ i:before {
   background-color: var(--color1);
 }
 
-.more_btn:hover {
+.more_btn_service {
+  padding: 0px 46px;
+ 
+  background-size: 200% auto;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
+  
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 55px;
+  border: 6px solid var(--color1);
+  color: black;
+  background-color: var(--color1);
+  width: 90%;
+}
+
+.more_btn:hover, .more_btn_service:hover {
   color: #fff;
   border: 6px solid var(--color3);
   background-color: var(--color3);
