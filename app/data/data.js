@@ -122,6 +122,33 @@ module.exports = {
                 path: "/img/services/cejas/cejas-lumi.jpeg",
                 alternative: "Lamination Deluxe"
             }]
+        },
+        {
+            id: 6,
+            nameService: "Technological volume",
+            numService : 1, /*  */
+            typeService: "Extensions Service",
+            description: "Trendy effect, with pre-armed extensions with a dimension of 3 to 4 hairs depending on your preference. They can look from very thick to very natural, everything will depend on the number of natural eyelashes you have and the curvature to use.",
+            descriptionIndex: "Trendy effect, with pre-armed extensions with a dimension of 3 to 4 hairs depending on your preference.",
+            recommendations: [],
+            optionals: [],
+            mainImg: "/img/services/pestanas/pestanas-t (1).jpg",
+            gallery: [{
+                id: 1,
+                path: "/img/services/pestanas/pestanas-t (1).jpg",
+                alternative: "Technological Volume Eyelashes"
+            },
+            {
+                id: 2,
+                path: "/img/services/pestanas/pestanas-t (2).jpg",
+                alternative: "Technological Volume Eyelashes"
+            },
+            {
+                id: 3,
+                path: "/img/services/pestanas/pestanas-t (3).jpg",
+                alternative: "Technological Volume Eyelashes"
+            }
+        ]
         }
         
     ]

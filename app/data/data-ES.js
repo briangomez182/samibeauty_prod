@@ -122,6 +122,33 @@ module.exports = {
                 path: "/img/services/cejas/cejas-lumi.jpeg",
                 alternative: "Laminación de cejas de Lujo"
             }]
+        },
+        {
+            id: 6,
+            nameService: "Volumen tecnológico",
+            numService : 1, /*  */
+            typeService: "Servicios de Extensiones",
+            description: "Efecto en tendencia, con extensiones pre-armadas con una dimensión de 3 a 4 pelitos dependiendo de tu preferencia. Pueden verse desde muy tupidas hasta muy naturales todo dependerá de la cantidad de pestañas naturales que tengas y de la curvatura a usar.",
+            descriptionIndex: "Efecto en tendencia, con extensiones pre-armadas con una dimensión de 3 a 4 pelitos dependiendo de tu preferencia.",
+            recommendations: [],
+            optionals: [],
+            mainImg: "/img/services/pestanas/pestanas-t (1).jpg",
+            gallery: [{
+                id: 1,
+                path: "/img/services/pestanas/pestanas-t (1).jpg",
+                alternative: "Pestañas con volumen tecnológico"
+            },
+            {
+                id: 2,
+                path: "/img/services/pestanas/pestanas-t (2).jpg",
+                alternative: "Pestañas con volumen tecnológico"
+            },
+            {
+                id: 3,
+                path: "/img/services/pestanas/pestanas-t (3).jpg",
+                alternative: "Pestañas con volumen tecnológico"
+            }
+        ]
         }
         
     ]
