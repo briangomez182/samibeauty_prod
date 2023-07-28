@@ -135,6 +135,10 @@
         padding: 0px 15px 0px 0px;
         cursor: pointer;
     }
+
+    .main_menu_area .navbar .navbar-toggler:focus {
+        outline:none;
+    }
     .main_menu_area .navbar .navbar-nav li.submenu .dropdown-menu {
         background: transparent;
         border: none;
