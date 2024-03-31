@@ -7,27 +7,19 @@ module.exports = {
 
         let servicesExtensions  = data.listServices.filter(data => data.numService == 1);
         let servicesEyebrows    = data.listServices.filter(data => data.numService == 2);
+        let nailsEyebrows       = data.listServices.filter(data => data.numService == 3);
 
-        if (req.session.langES == undefined) {
-            /* Esta en ingles */
-            return res.render('index',{servicesExtensions, servicesEyebrows})
-        } else {
-            /* Esta em español */
-            return res.render('index-ES',{servicesExtensions, servicesEyebrows})
-        }
+                             /* Mostrar vistas en Español o ingles */
+        const viewLang = req.session.langES ? 'index-ES' : 'index';
+        return res.render(viewLang, { servicesExtensions, servicesEyebrows, nailsEyebrows });
+
        
     },
     about: (req, res) => {
         let gallery = ['people-2.jpg', 'people-6-XL.JPG', 'banner.JPG']
 
-        if (req.session.langES == undefined) {
-            /* Esta en ingles */
-            return res.render('about-me', {gallery})
-        } else {
-            /* Esta em español */
-            return res.render('about-me-ES', {gallery})
-        }
-
+        const viewLang = req.session.langES ? 'about-me-ES' : 'about-me';
+        return res.render(viewLang, { gallery });
         
     },
     lang: (req, res) => {

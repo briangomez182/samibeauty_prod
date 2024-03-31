@@ -87,7 +87,9 @@
                     <% for( let index = 0; index <service.gallery.length; index++ ) { %>
                         <div class="item">
                             <div class="testi_item">
-                               <img class="gallery_item" src="<%= service.gallery[index].path %>" alt="<%= service.gallery[index].alternative %>">
+                                <a href="<%= service.gallery[index].path %>" target="_blank" rel="noopener noreferrer">
+                                    <img class="gallery_item" src="<%= service.gallery[index].path %>" alt="<%= service.gallery[index].alternative %>">
+                                 </a>
                             </div>
                         </div>
                     <% } %>

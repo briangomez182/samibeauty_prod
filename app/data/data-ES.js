@@ -61,15 +61,10 @@ module.exports = {
             typeService: "Servicio de Cejas",
             description: "Servicio en el que diseñamos tu cejas de acuerdo a la estructura natural de tu rostro, con depilación con cera suave, incluye masaje de drenaje y terapia de frío",
             descriptionIndex: "Servicio en el que diseñamos tu cejas de acuerdo a la estructura natural de tu rostro, con depilación con cera suave, incluye masaje de drenaje y terapia de frío",
-            mainImg: "/img/services/cejas/cejas-d (2).jpeg",
+            mainImg: "/img/services/cejas/cejas-d (1).jpeg",
             recommendations: [],
             optionals: ['Maquillaje'],
             gallery: [{
-                id: 1,
-                path: "/img/services/cejas/cejas-d (1).jpg",
-                alternative: "De Lujo"
-            },
-            {
                 id: 1,
                 path: "/img/services/cejas/cejas-d (2).jpeg",
                 alternative: "De Lujo"
@@ -77,6 +72,11 @@ module.exports = {
             {
                 id: 1,
                 path: "/img/services/cejas/cejas-d (3).jpeg",
+                alternative: "De Lujo"
+            },
+            {
+                id: 1,
+                path: "/img/services/cejas/cejas-d (4).jpeg",
                 alternative: "De Lujo"
             }]
         }
@@ -108,7 +108,7 @@ module.exports = {
             numService : 2,
             typeService: "Servicio de Cejas",
             description: "Procedimiento que hace que se vean más pobladas y ordenadas dura alrededor de 2 meses. La laminación  de cejas consiste en realizar un planchado de cejas no es exclusivamente para quien tiene cejas demasiado pobladas o rebeldes, es para todas aquellas personas que quieren lucir una imagen más sofisticada. Al hacer el planchado de cejas, estas quedarán peinadas hacia una sola dirección y lucirán perfectas, puesto que esto ayuda a definir correctamente su forma.",
-            descriptionIndex: "rocedimiento que hace que se vean más pobladas y ordenadas dura alrededor de 2 meses. La laminación  de cejas consiste en realizar un planchado de cejas no es exclusivamente para quien tiene cejas demasiado pobladas o rebeldes, es para todas aquellas personas que quieren lucir una imagen más sofisticada.",
+            descriptionIndex: "Procedimiento que hace que se vean más pobladas y ordenadas dura alrededor de 2 meses. La laminación  de cejas consiste en realizar un planchado de cejas no es exclusivamente para quien tiene cejas demasiado pobladas o rebeldes, es para todas aquellas personas que quieren lucir una imagen más sofisticada.",
             mainImg: "/img/services/cejas/cejas-lumi.jpeg",
             recommendations: ['Incluye diseño y depilación '],
             optionals: [],
@@ -147,6 +147,33 @@ module.exports = {
                 id: 3,
                 path: "/img/services/pestanas/pestanas-t (3).jpg",
                 alternative: "Pestañas con volumen tecnológico"
+            }
+        ]
+        },
+        {
+            id: 7,
+            nameService: "Manicura Rusa / con gel de construcción",
+            numService : 3, /*  */
+            typeService: "Servicios de Uñas",
+            description: "Se trata de una Limpieza de cuticula que se realiza al seco, logrando así un acabado impecable. Se aplica un gel de construcción con el cual realizamos una nivelacion de la uña y alcanzamos este resultado estos resultados impecables! Tiene una durabilidad de 4 a 6 semanas, no daña la uña, puedes escoger el color que desees.",
+            descriptionIndex: "Limpieza de cuticula que se realiza al seco, logrando así un acabado impecable. Se aplica un gel de construcción",
+            recommendations: [],
+            optionals: [],
+            mainImg: "/img/services/unas/unas-r (1).jpeg",
+            gallery: [{
+                id: 1,
+                path: "/img/services/unas/unas-r (4).jpeg",
+                alternative: "Russian Manicure / Builder gel"
+            },
+            {
+                id: 2,
+                path: "/img/services/unas/unas-r (2).jpeg",
+                alternative: "Russian Manicure / Builder gel"
+            },
+            {
+                id: 3,
+                path: "/img/services/unas/unas-r (3).jpeg",
+                alternative: "Russian Manicure / Builder gel"
             }
         ]
         }

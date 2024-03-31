@@ -9,7 +9,7 @@
         <%- include('./partials/sliderIndex') %>
         <!--================End Slider Area =================-->
         
-        <!--================Feature Area =================-->
+        <!--================Extensions Area =================-->
         <section  class="feature_area">
             <div class="container">
                 <div class="c_title">
@@ -36,10 +36,10 @@
                 </div>
             </div>
         </section>
-        <!--================End Feature Area =================-->
+        <!--================End Extensions Area =================-->
 
-         <!--================Feature Area =================-->
-         <section class="feature_area">
+        <!--================ Eyebrows  Area =================-->
+        <section class="feature_area">
             <div class="container">
                 <div class="c_title">
                     <img id="eyebrows" src="img/icon/title-icon.png" alt="">
@@ -62,8 +62,33 @@
                 </div>
             </div>
         </section>
+        <!--================End Eyebrows Area =================-->
 
-
+        <!--================ Nails  Area =================-->
+        <section class="feature_area">
+            <div class="container">
+                <div class="c_title">
+                    <img id="nails" src="img/icon/title-icon.png" alt="">
+                    <h2>Nails Services</h2>
+                </div>
+                <div class="row feature_inner">
+                    <% nailsEyebrows.forEach(e => { %>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="feature_item">
+                                <div class="f_icon">
+                                    <img src="<%= e.mainImg %>" alt="<%= e.nameService %>">
+                                </div>
+                                <h4><%= e.nameService %></h4>
+                                <p><%= e.descriptionIndex  %></p>
+                                <a class="more_btn" href="/services/<%= e.id %>">Read More</a>
+                            </div>
+                        </div>
+                    <% }) %>
+                
+                </div>
+            </div>
+        </section>
+        <!--================End Nails Area =================-->
         
         
         <!--================The best slider Area =================-->

@@ -790,6 +790,10 @@ i:before {
   overflow: hidden;
 }
 
+.feature_inner{
+  justify-content: center;
+}
+
 .service_feature .feature_inner {
   margin-bottom: -50px;
 }

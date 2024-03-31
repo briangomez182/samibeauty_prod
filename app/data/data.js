@@ -61,15 +61,10 @@ module.exports = {
             typeService: "Eyebrows Service",
             description: "Service in which we design your eyebrows according to the natural structure of your face, with soft wax hair removal, includes drainage and cold therapy.",
             descriptionIndex: "Service in which we design your eyebrows according to the natural structure of your face, with soft wax hair removal, includes drainage and cold therapy.",
-            mainImg: "/img/services/cejas/cejas-d (2).jpeg",
+            mainImg: "/img/services/cejas/cejas-d (1).jpeg",
             recommendations: [],
             optionals: ['Make-up'],
             gallery: [{
-                id: 1,
-                path: "/img/services/cejas/cejas-d (1).jpg",
-                alternative: "Deluxe"
-            },
-            {
                 id: 1,
                 path: "/img/services/cejas/cejas-d (2).jpeg",
                 alternative: "Deluxe"
@@ -77,6 +72,11 @@ module.exports = {
             {
                 id: 1,
                 path: "/img/services/cejas/cejas-d (3).jpeg",
+                alternative: "Deluxe"
+            },
+            {
+                id: 1,
+                path: "/img/services/cejas/cejas-d (4).jpeg",
                 alternative: "Deluxe"
             }]
         }
@@ -147,6 +147,33 @@ module.exports = {
                 id: 3,
                 path: "/img/services/pestanas/pestanas-t (3).jpg",
                 alternative: "Technological Volume Eyelashes"
+            }
+        ]
+        },
+        {
+            id: 7,
+            nameService: "Russian Manicure / Builder gel",
+            numService : 3, /*  */
+            typeService: "Extensions Service",
+            description: "It is a cuticle cleaning that is carried out dry, thus achieving an impeccable finish. A construction gel is applied with which we level the nail and achieve these impeccable results! It lasts 4 to 6 weeks, does not damage the nail, you can choose the color you want.",
+            descriptionIndex: "It is a cuticle cleaning that is carried out dry, thus achieving an impeccable finish.",
+            recommendations: [],
+            optionals: [],
+            mainImg: "/img/services/unas/unas-r (1).jpeg",
+            gallery: [{
+                id: 1,
+                path: "/img/services/unas/unas-r (4).jpeg",
+                alternative: "Russian Manicure / Builder gel"
+            },
+            {
+                id: 2,
+                path: "/img/services/unas/unas-r (2).jpeg",
+                alternative: "Russian Manicure / Builder gel"
+            },
+            {
+                id: 3,
+                path: "/img/services/unas/unas-r (3).jpeg",
+                alternative: "Russian Manicure / Builder gel"
             }
         ]
         }
